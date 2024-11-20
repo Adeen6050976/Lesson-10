@@ -1,0 +1,61 @@
+body {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    background-color: black;
+    color: cadetblue;
+}
+
+h1{
+    color: lightcoral;
+}
+
+/* Attribute Selector */
+a {
+    color: yellowgreen;
+text-decoration: none;
+}
+ 
+a:hover {
+color: beige;
+}
+/* Child selector */
+ul > li {
+    font-weight: bold;
+}
+ 
+/* Sibling selector */
+h1 + p {
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: teal;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: violet;
+}
+
+/* :not(selector) Pseudo-class */
+p:not( :first-of-type ){
+    text-decoration: underline;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "🚀";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: "🌌";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color: thistle;
+}
